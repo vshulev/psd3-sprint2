@@ -1,0 +1,18 @@
+package sprint2;
+
+public class Model {
+
+	private static Model m;
+
+	private Model() {
+
+	}
+
+	public static Model getInstance() {
+		if(m == null) {
+			m = new Model();
+		}
+		return m;
+	}
+
+}
