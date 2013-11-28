@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<p th:text="'Create a session'" />
+	<ul>
+		<form method="get" action="createSession">
+
+			<p><label for="Date">Date </label> <input type="text" name="Date" /></p>
+			<p><label for="time">Time </label> <input type="text" name="Time" /></p>
+
+			<p><label for="duration">Duration  </label>
+
+					<select name="duration_dropdown">
+					<option value="one">1</option>
+					<option value="two">2</option>
+					<option value="three">3</option>
+					<option value="four">4</option>
+					</select>
+					 Hour(s)
+			</p>
+				
+
+			<p><label for="repeat frequence">Repeat frequence :  </label>
+
+					<select name="frequence">
+					<option value="one">1</option>
+					<option value=""></option>
+					</select>
+			</p>
+
+			<p><label for="lecture">Lecture </label><input type="text" name="lecture" /></p>
+
+			<p><label for="max attendance"> Max attendance </label><input type="text" name="max_attendance" /></p>
+
+			<p><label for="compolsory">Compolsory </label><input type="radio" name="compolsory" value="Yes"/>Yes
+									<input type="radio" name="compolsory" value="No"/>No
+			</p>
+
+			<p><input type="submit" value="Create" /></p>
+		</form>
+	</ul>
+</body>
+</html>
