@@ -15,7 +15,7 @@ public class LoginController {
 
 		
 	@RequestMapping("/authenticate")
-	public String authenticate(@RequestParam(value="username", required=true) String username, @RequestParam(value="password", required=true) String password, Model model) {
+	public String authenticate(@RequestParam(value="username", required=true) String username, @RequestParam(value="password", required=true) String password) {
 		return "redirect:dashboard?username=" + username;
 	}
 }
