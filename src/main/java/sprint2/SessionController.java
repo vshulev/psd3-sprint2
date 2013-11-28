@@ -8,15 +8,13 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class SessionController {
 
-
-
-	@RequestMapping("session/create")
-	public String create() {
+	@RequestMapping("/session/create")
+	public String create()
+	{
 		return "session/create";
 	}
-
-	//@RequestMapping("/session/create")
-	public String session(
+/*
+	public String createSession(
 @RequestParam(value="time", required=true) String time, 
 @RequestParam(value="duration_dropdown", required=true) String duration , 
 @RequestParam(value="frequence", required=true) String frequence, 
@@ -25,7 +23,7 @@ public class SessionController {
 @RequestParam(value="compolsory", required=true) String compolsory 
 
 ) {
-		return "login";
+		return "session/create";
 	}
-
+*/
 }
