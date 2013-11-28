@@ -1,0 +1,11 @@
+To set up the git repo
+1. git init
+2. git remote add origin https://username@github.com/vshulev/psd3-sprint2
+
+To make changes
+
+1. git add <files created>
+2. git commit -am "message here"
+3. git pull (ALWAYS PULL FIRST)
+4. git push origin master
+
