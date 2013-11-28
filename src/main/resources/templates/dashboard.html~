@@ -7,8 +7,8 @@
 <body>
 	<p th:text="'Hello, ' + ${username} + '!'" />
 	<ul>
-		<li><a href="timetable/view">View timetable</a></li>
-		<li><a href="session/create">View timetable</a></li>
+		<li><a href="timetable/view">View timetable</a></li>	
+		<li th:if="${username}=='admin'"><a href="session/create">Create session</a></li>
 	</ul>
 </body>
 </html>

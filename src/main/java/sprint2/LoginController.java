@@ -16,6 +16,9 @@ public class LoginController {
 		
 	@RequestMapping("/authenticate")
 	public String authenticate(@RequestParam(value="username", required=true) String username, @RequestParam(value="password", required=true) String password) {
-		return "redirect:dashboard?username=" + username;
+		if((username.equals("admin") && password.equals("123")) || (username.equals("student") && password.equals("password"))) 		
+			return "redirect:dashboard?username=" + username;
+		else
+			return "redirect:/";
 	}
 }
