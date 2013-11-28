@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<form method="get" action="localhost:8081/authenticate">
+		<p><label for="username">Username </label><input type="text" name="username" /></p>
+		<p><label for="password">Password </label><input type="password" name="password" /></p>
+		<p><input type="submit" value="Log in" /></p>
+	</form>
+</body>
+</html>
