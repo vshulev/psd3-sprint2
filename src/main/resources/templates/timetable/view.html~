@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<p th:text="'Hello, ' + ${username} + '!'" />
+	<ul>
+		<li><p th:text="'Mondays class is ' + ${class1} + ' at 9am-10am, and a lab session from 2pm-4pm'"/></li>	
+		<li><p th:text="'Tuesdays class is ' + ${class2} + ' at 10am-12pm, and a lab session from 2pm-3pm'"/></li>	
+		<li><p th:text="'Wednesdays class is ' + ${class3} + ' at 10am-12pm, and a lab session from 2pm-3pm'"/></li>	
+		<li th:if="${username}=='admin'"><a href="session/create">Create session</a></li>
+
+
+	</ul>
+</body>
+</html>
