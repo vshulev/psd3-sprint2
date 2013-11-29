@@ -7,10 +7,10 @@
 <body>
 	<p th:text="'Create a session'" />
 	<ul>
-		<form method="get" action="createSession">
+		<form method="get" action="insert">
 
-			<p><label for="Date">Date </label> <input type="text" name="Date" /></p>
-			<p><label for="time">Time </label> <input type="text" name="Time" /></p>
+			<p><label for="date">Date </label> <input type="text" name="date" /></p>
+			<p><label for="time">Time </label> <input type="text" name="time" /></p>
 
 			<p><label for="duration">Duration  </label>
 
@@ -24,21 +24,25 @@
 			</p>
 				
 
-			<p><label for="repeat frequence">Repeat frequence :  </label>
+			<p><label for="repeat frequency">Repeat frequency :  </label>
 
-					<select name="frequence">
+					<select name="frequency">
 					<option value="one">1</option>
 					<option value=""></option>
 					</select>
 			</p>
 
-			<p><label for="lecture">Lecture </label><input type="text" name="lecture" /></p>
+			<p><label for="lecturer">Lecturer </label><input type="text" name="lecturer" /></p>
+			
+			<p><label for="course">Course </label><input type="text" name="course" /></p>
 
-			<p><label for="max attendance"> Max attendance </label><input type="text" name="max_attendance" /></p>
+			<p><label for="max_attendance"> Max attendance </label><input type="text" name="max_attendance" /></p>
 
-			<p><label for="compolsory">Compolsory </label><input type="radio" name="compolsory" value="Yes"/>Yes
-									<input type="radio" name="compolsory" value="No"/>No
+			<p><label for="compulsory">Compulsory </label><input type="radio" name="compulsory" value="Yes"/>Yes
+									<input type="radio" name="compulsory" value="No"/>No
 			</p>
+			
+			<p><label for="venue">Venue </label><input type="text" name="venue" /></p>
 
 			<p><input type="submit" value="Create" /></p>
 		</form>

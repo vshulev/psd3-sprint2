@@ -14,7 +14,7 @@ public class Session {
 	    WEEKLY ("Weekly"),
 	    FORTNIGHTLY ("Fortnightly");
 
-	    private RepeatFrequency(String value){
+	    public RepeatFrequency(String value){
 	        this.value = value;
 	    }
 

@@ -32,8 +32,10 @@ public class SessionController {
 		// parse time (retarded way)
 		String[] vals = time.split(":");
 	
+		/*
 		Database db = Database.getInstance();
 		db.insertSession(new Date(1/1/2014), new Time(Integer.parseInt(vals[0]), Integer.parseInt(vals[1]), Integer.parseInt(vals[2])), Integer.parseInt(duration), lecturer, course, frequency, Integer.parseInt(max_attendance), Boolean.parseBoolean(compulsory), venue);
+		*/
 		return "redirect:dashboard";
 	}
 	
